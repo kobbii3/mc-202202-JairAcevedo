@@ -1,0 +1,32 @@
+x = 1
+while x == 1:
+    print("--------------------------")
+    print(".:Bienvenido al operador de conjuntos:.")
+    A=set()
+    cardinal=int(input("Por favor ingrese la cantidad de elementos que tendrá el conjunto A: "))
+    for i in range(1,cardinal+1):
+      num = float(input(f"Ingrese el elemento numero {i}: "))
+      A.add(num)
+    print("su conjunto A es: ", A)
+
+    B=set()
+    cardinal=int(input("Por favor ingrese la cantidad de elementos que tendrá el conjunto B: "))
+    for i in range(1,cardinal+1):
+      num = float(input(f"Ingrese el elemento numero {i}: "))
+      B.add(num)
+    print("su conjunto B es: ", B)
+
+    print("Por favor, indique la operacion que va a realizar:")
+    op = int(input("1. Union, 2. Interseccion, 3. Diferencia, 4. Diferencia simetrica :"))
+    if op == 1:
+      print(A|B)
+    elif op == 2:
+      print(A&B)
+    elif op == 3:
+      print(A-B)
+    elif op == 4:
+      print(A^B)
+    x = int(input("Presione 1 para hacer otra operación de conjuntos, o 2 para salir."))
+else:
+    print("Gracias por usarnos.")
+    False

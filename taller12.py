@@ -1,7 +1,6 @@
 import math
 from math import factorial
 from math import e
-from decimal import Decimal
 
 ea = 0
 xi = 0.55
